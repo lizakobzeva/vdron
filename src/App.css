@@ -1,0 +1,202 @@
+.App {
+    display: flex;
+    flex-direction: column;
+
+    .App_content{
+        display: flex;
+        flex-direction: column;
+        gap: 200px
+    }
+
+    .App-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3rem;
+
+        .App-header_nav {
+            padding: 0 3rem;
+            display: flex;
+            align-items: center;
+            gap: 2em;
+
+            a {
+                font-size: 2em;
+                color: white;
+            }
+
+        }
+    }
+
+    .main {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+
+        h1 {
+            font-size: 3em;
+            font-family: TD Mars;
+            font-weight: 400;
+            line-height: 50px;
+            letter-spacing: 0%;
+
+        }
+
+        p {
+            font-weight: 300;
+            line-height: 50px;
+            letter-spacing: -5%;
+            font-family: Helvetica;
+        }
+    }
+
+    .mission {
+        padding-left: 3rem;
+        width: 100%;
+        text-align: left;
+        position: relative;
+
+        h2 {
+            font-family: durik;
+            font-weight: 400;
+            font-size: 4rem;
+            line-height: 40px;
+            letter-spacing: -5%;
+
+        }
+
+        p {
+            font-family: Helvetica;
+            font-weight: 300;
+            line-height: 40px;
+            letter-spacing: -5%;
+
+        }
+
+        .mission_content {
+            width: 40%;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 2rem;
+
+            .mission_content-item {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+
+        .mission_img {
+            position: absolute;
+            right: 0;
+            top: -30%;
+            z-index: -1;
+        }
+    }
+
+    .aboutus {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            font-family: TD Mars;
+            font-weight: 400;
+            font-size: 3rem;
+            line-height: 50px;
+            letter-spacing: 0%;
+        }
+
+        p {
+            font-family: Helvetica;
+            font-weight: 300;
+            line-height: 50px;
+            letter-spacing: -5%;
+        }
+        .aboutus_content{
+            width: 90%;
+            margin: 4rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+            .aboutus_content-item{
+                width: 40%;
+                text-align: left;
+                h4{
+                    font-family: TD Mars;
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                    line-height: 40px;
+                    letter-spacing: -5%;
+                }
+                p{
+                    font-family: Helvetica;
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                    line-height: 25px;
+                    letter-spacing: -5%;
+                }
+            }
+        }
+    }
+
+    .construction{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        h2{
+            font-family: TD Mars;
+            font-weight: 400;
+            font-size: 3rem;
+            line-height: 40px;
+            letter-spacing: -5%;
+        }
+        p{
+            font-family: Helvetica;
+            font-weight: 300;
+            font-size:2rem;
+            line-height: 40px;
+            letter-spacing: -5%;
+        }
+
+    }
+
+    .contact{
+        width: 45%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h2{
+            font-family: TD Mars;
+            font-weight: 400;
+            font-size: 3rem;
+            line-height: 50px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+        .contact_input{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            margin: 2rem 0;
+            input{
+                background-color: white;
+                width: 100%;
+                padding: 1rem;
+                border-radius: 8px;
+            }
+            button{
+                padding: 1rem;
+                background-color: #1964DD;
+            }
+        }
+
+    }
+}
