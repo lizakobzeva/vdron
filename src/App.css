@@ -1,7 +1,39 @@
 .App {
     display: flex;
     flex-direction: column;
-
+    .App_backgroundWhiteSphere{
+        position: absolute;
+        top: 5rem;
+        width: 40rem;
+        border-radius: 100%;
+        height: 40rem;
+        left: calc(50% - 20rem);
+        filter: blur(12rem);
+        background-color: #FFFFFF8F;
+        z-index: 0;
+    }
+    .App_backgroundRedSphere{
+        position: absolute;
+        top: 20rem;
+        left: -40rem;
+        width: 70rem;
+        border-radius: 100%;
+        height: 90rem;
+        filter: blur(12rem);
+        background-color: #F41D1D8C;
+        z-index: -1;
+    }
+    .App_backgroundBLueSphere{
+        position: absolute;
+        top: 40rem;
+        right: -40rem;
+        width: 80rem;
+        border-radius: 100%;
+        height: 80rem;
+        filter: blur(12rem);
+        background-color: #1964DD8C;
+        z-index: -1;
+    }
     .App_content{
         display: flex;
         flex-direction: column;
@@ -148,6 +180,29 @@
         width: 50%;
         margin: 0 auto;
         text-align: center;
+        position: relative;
+        .construction_backgroundBLueSphere{
+            position: absolute;
+            top: -25rem;
+            left: -70rem;
+            width: 80rem;
+            border-radius: 100%;
+            height: 100rem;
+            filter: blur(15rem);
+            background-color: #1964DD8C;
+            z-index: -1;
+        }
+        .construction_backgroundRedSphere{
+            position: absolute;
+            top: -25rem;
+            right: -70rem;
+            width: 80rem;
+            border-radius: 100%;
+            height: 100rem;
+            filter: blur(15rem);
+            background-color: #F41D1D8C;
+            z-index: -1;
+        }
         h2{
             font-family: 'TD Mars', sans-serif;
             margin-bottom: 2rem;

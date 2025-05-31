@@ -16,6 +16,9 @@ import Dron from "./Dron.tsx";
 function App() {
     return (
         <div className="App">
+            {/*<div className="backgroundWhiteSphere"></div>*/}
+            <div className="App_backgroundRedSphere"></div>
+            <div className="App_backgroundBLueSphere"></div>
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo"/>
                 <nav className='App-header_nav'>
@@ -81,6 +84,8 @@ function App() {
                     </div>
                 </section>
                 <section className="construction">
+                    <div className="construction_backgroundBLueSphere"></div>
+                    <div className="construction_backgroundRedSphere"></div>
                     <h2>конструкция</h2>
                     <p>собрана из взаимозаменяемых модулей.
                         возможен апгрейд без замены всей платформы</p>
