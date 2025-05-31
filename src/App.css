@@ -35,11 +35,10 @@
 
         h1 {
             font-size: 3em;
-            font-family: TD Mars;
+            font-family: 'TD Mars', sans-serif;
             font-weight: 400;
             line-height: 50px;
             letter-spacing: 0%;
-
         }
 
         p {
@@ -57,7 +56,7 @@
         position: relative;
 
         h2 {
-            font-family: durik;
+            font-family: 'durik', sans-serif;
             font-weight: 400;
             font-size: 4rem;
             line-height: 40px;
@@ -66,7 +65,6 @@
         }
 
         p {
-            font-family: Helvetica;
             font-weight: 300;
             line-height: 40px;
             letter-spacing: -5%;
@@ -84,6 +82,9 @@
                 display: flex;
                 align-items: center;
                 gap: 1rem;
+                p{
+                    font-family: 'durik', sans-serif;
+                }
             }
         }
 
@@ -101,7 +102,7 @@
         text-align: center;
 
         h2 {
-            font-family: TD Mars;
+            font-family: 'TD Mars', sans-serif;
             font-weight: 400;
             font-size: 3rem;
             line-height: 50px;
@@ -148,11 +149,11 @@
         margin: 0 auto;
         text-align: center;
         h2{
-            font-family: TD Mars;
+            font-family: 'TD Mars', sans-serif;
+            margin-bottom: 2rem;
             font-weight: 400;
             font-size: 3rem;
             line-height: 40px;
-            letter-spacing: -5%;
         }
         p{
             font-family: Helvetica;
@@ -165,14 +166,14 @@
     }
 
     .contact{
-        width: 45%;
+        width: 50%;
         margin: 0 auto;
         display: flex;
         align-items: center;
         flex-direction: column;
 
         h2{
-            font-family: TD Mars;
+            font-family: 'TD Mars', sans-serif;
             font-weight: 400;
             font-size: 3rem;
             line-height: 50px;
@@ -195,6 +196,8 @@
             button{
                 padding: 1rem;
                 background-color: #1964DD;
+                color: white;
+                border-radius: 8px;
             }
         }
 
