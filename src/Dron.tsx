@@ -6,7 +6,7 @@ import {Suspense} from "react";
 
 
 function Dron() {
-    const gltf = useLoader(GLTFLoader, '../public/models/dron/scene.gltf')
+    const gltf = useLoader(GLTFLoader, 'src/assets/models/dron/scene.gltf')
     return (
         <Canvas style={{width: '100%', height: '70vh'}}>
             <fog attach="fog" args={["#2F4F4F", 10, 20]} />
