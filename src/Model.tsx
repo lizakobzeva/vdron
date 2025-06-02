@@ -10,7 +10,7 @@ Title: dron
 
 import * as THREE from 'three'
 import { useGraph } from '@react-three/fiber'
-import { useGLTF, useAnimations } from '@react-three/drei'
+import { useGLTF } from '@react-three/drei'
 import {type GLTF, SkeletonUtils} from 'three-stdlib'
 import {useMemo, useRef} from "react";
 
@@ -109,10 +109,10 @@ type GLTFResult = GLTF & {
 
 export function Model() {
   const group = useRef<THREE.Group>(null)
-  const { scene, animations } = useGLTF('/scene-transformed.glb')
+  const { scene } = useGLTF('/scene-transformed.glb')
   const clone = useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone) as unknown as GLTFResult
-  const { actions } = useAnimations(animations, group)
+  // const { actions } = useAnimations(animations, group)
   return (
       <group ref={group}  dispose={null}>
         <group scale={1} name="Sketchfab_Scene">
