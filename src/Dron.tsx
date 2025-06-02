@@ -1,12 +1,10 @@
 import {Canvas} from "@react-three/fiber";
-import {useLoader} from '@react-three/fiber'
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'
 import {PresentationControls, Stage} from "@react-three/drei";
 import {Suspense} from "react";
+import {Model} from "./Model.tsx";
 
 
 function Dron() {
-    const gltf = useLoader(GLTFLoader, 'src/assets/models/dron/scene.gltf')
     return (
         <Canvas style={{width: '100%', height: '70vh'}}>
             <fog attach="fog" args={["#2F4F4F", 10, 20]} />
@@ -18,7 +16,7 @@ function Dron() {
                     castShadow={false}
                 >
                     <Suspense fallback={null}>
-                        <primitive object={gltf.scene}/>
+                        <Model />
                     </Suspense>
                 </Stage>
             </PresentationControls>
