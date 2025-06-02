@@ -1,5 +1,5 @@
 import './App.css'
-import logo from './assets/logo.png'
+import logo from './assets/vdrone.svg'
 import sirius from './assets/sirius.png'
 import square from './assets/square.svg'
 import architecture from './assets/architecture.svg'

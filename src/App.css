@@ -10,7 +10,7 @@
         left: calc(50% - 20rem);
         filter: blur(12rem);
         background-color: #FFFFFF8F;
-        z-index: 0;
+        z-index: 1;
     }
     .App_backgroundRedSphere{
         position: absolute;
@@ -21,7 +21,7 @@
         height: 90rem;
         filter: blur(12rem);
         background-color: #F41D1D8C;
-        z-index: -1;
+        z-index: 1;
     }
     .App_backgroundBLueSphere{
         position: absolute;
@@ -32,7 +32,7 @@
         height: 80rem;
         filter: blur(12rem);
         background-color: #1964DD8C;
-        z-index: -1;
+        z-index: 1;
     }
     .App_content{
         display: flex;
@@ -44,7 +44,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 3rem;
+        padding: 1rem 3rem;
 
         .App-header_nav {
             padding: 0 3rem;
@@ -64,7 +64,7 @@
         width: 75%;
         margin: 0 auto;
         text-align: center;
-
+        z-index: 3;
         h1 {
             font-size: 3em;
             font-family: 'TD Mars', sans-serif;
@@ -124,7 +124,7 @@
             position: absolute;
             right: 0;
             top: -30%;
-            z-index: -1;
+            z-index: 1;
         }
     }
 
@@ -132,6 +132,7 @@
         width: 75%;
         margin: 0 auto;
         text-align: center;
+        z-index: 3;
 
         h2 {
             font-family: 'TD Mars', sans-serif;
@@ -190,7 +191,7 @@
             height: 100rem;
             filter: blur(15rem);
             background-color: #1964DD8C;
-            z-index: -1;
+            z-index: 1;
         }
         .construction_backgroundRedSphere{
             position: absolute;
@@ -201,7 +202,7 @@
             height: 100rem;
             filter: blur(15rem);
             background-color: #F41D1D8C;
-            z-index: -1;
+            z-index: 1;
         }
         h2{
             font-family: 'TD Mars', sans-serif;
@@ -209,6 +210,7 @@
             font-weight: 400;
             font-size: 3rem;
             line-height: 40px;
+            position: relative;
         }
         p{
             font-family: Helvetica;
@@ -216,8 +218,11 @@
             font-size:2rem;
             line-height: 40px;
             letter-spacing: -5%;
+            position: relative;
         }
-
+        img{
+            position: relative;
+        }
     }
 
     .contact{
