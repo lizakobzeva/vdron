@@ -12,9 +12,11 @@
   "dependencies": {
     "@react-three/drei": "^10.0.8",
     "@react-three/fiber": "^9.1.2",
+    "@types/swiper": "^5.4.3",
     "@types/three": "^0.176.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "swiper": "^11.2.8",
     "three": "^0.176.0",
     "three-stdlib": "^2.36.0"
   },

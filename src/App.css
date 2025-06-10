@@ -1,3 +1,7 @@
+@import "swiper/css/scrollbar";
+@import "swiper/css";
+@import "swiper/css/effect-coverflow";
+
 .App {
     display: flex;
     flex-direction: column;
@@ -261,5 +265,40 @@
             }
         }
 
+    }
+
+    .categories{
+        h2{
+            font-family: 'TD Mars', sans-serif;
+            font-weight: 400;
+            font-size: 3rem;
+            line-height: 50px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+
+    }
+}
+.swiper {
+    gap: 1rem;
+    width: 60%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    img {
+    display: block;
+    width: 100%;
+    }
+    p {
+        font-size: 1rem;
+        text-align: center;
+        display: block;
+        width: 100%;
     }
 }
