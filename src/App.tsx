@@ -95,6 +95,50 @@ function App() {
                         возможен апгрейд без замены всей платформы</p>
                     <img src={dronImg} alt='дрон'/>
                 </section>
+                <section className="categories">
+                <h2>каталог прототипов</h2>
+                <Swiper
+                    effect={'coverflow'}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={'auto'}
+                    loop={true}
+                    coverflowEffect={{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    }}
+                    modules={[EffectCoverflow, Pagination]}
+                    className="mySwiper"
+                >
+                    <SwiperSlide>
+                        <p>“Терра” Земледельческий дрон нового поколения — для ухода за полями и контроля урожая.</p>
+                        <img src={category1}/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <p>“Виора” Дрон-наблюдатель для мониторинга, картографии и охраны объектов.</p>
+                        <img src={category2}/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <p>“Достар” Надёжный дрон для быстрой доставки посылок и грузов на короткие и средние расстояния.</p>
+                        <img src={category3}/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <p>“Терра” Земледельческий дрон нового поколения — для ухода за полями и контроля урожая.</p>
+                        <img src={category1}/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <p>“Виора” Дрон-наблюдатель для мониторинга, картографии и охраны объектов.</p>
+                        <img src={category2}/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <p>“Достар” Надёжный дрон для быстрой доставки посылок и грузов на короткие и средние расстояния.</p>
+                        <img src={category3}/>
+                    </SwiperSlide>
+                </Swiper>
+            </section>
                 <section className="contact">
                     <h2>хотите узнать больше?</h2>
                     <div className='contact_input'>
@@ -102,50 +146,7 @@ function App() {
                         <button>отправить</button>
                     </div>
                 </section>
-                <section className="categories">
-                    <h2>каталог прототипов</h2>
-                    <Swiper
-                        effect={'coverflow'}
-                        grabCursor={true}
-                        centeredSlides={true}
-                        slidesPerView={'auto'}
-                        loop={true}
-                        coverflowEffect={{
-                            rotate: 50,
-                            stretch: 0,
-                            depth: 100,
-                            modifier: 1,
-                            slideShadows: true,
-                        }}
-                        modules={[EffectCoverflow, Pagination]}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide>
-                            <p>“Терра” Земледельческий дрон нового поколения — для ухода за полями и контроля урожая.</p>
-                            <img src={category1}/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <p>“Виора” Дрон-наблюдатель для мониторинга, картографии и охраны объектов.</p>
-                            <img src={category2}/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <p>“Достар” Надёжный дрон для быстрой доставки посылок и грузов на короткие и средние расстояния.</p>
-                            <img src={category3}/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <p>“Терра” Земледельческий дрон нового поколения — для ухода за полями и контроля урожая.</p>
-                            <img src={category1}/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <p>“Виора” Дрон-наблюдатель для мониторинга, картографии и охраны объектов.</p>
-                            <img src={category2}/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <p>“Достар” Надёжный дрон для быстрой доставки посылок и грузов на короткие и средние расстояния.</p>
-                            <img src={category3}/>
-                        </SwiperSlide>
-                    </Swiper>
-                </section>
+
                 <footer>
                     ООО “Вэдрон”
                     354340, пгт. Сириус, Триумфальный проезд, д.1
