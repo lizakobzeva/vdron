@@ -1,3 +1,4 @@
+// "use server"
 import './App.css'
 import logo from './assets/vdrone.svg'
 import sirius from './assets/sirius.png'
