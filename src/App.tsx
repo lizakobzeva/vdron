@@ -8,15 +8,15 @@ import caseSvg from './assets/case.svg'
 import flag from './assets/flag.svg'
 import rocket from './assets/rocket.png'
 import braintools from './assets/braintools.png'
-import category1 from './assets/category1.png'
-import category2 from './assets/category2.png'
-import category3 from './assets/category3.png'
+// import category1 from './assets/category1.png'
+// import category2 from './assets/category2.png'
+// import category3 from './assets/category3.png'
 import marker from './assets/marker.png'
 import dronImg from './assets/dronImg.png'
-import {Swiper, SwiperSlide} from 'swiper/react';
+// import {Swiper, SwiperSlide} from 'swiper/react';
 import Dron from "./Dron.tsx";
 
-import {EffectCoverflow, Pagination} from 'swiper/modules';
+// import {EffectCoverflow, Pagination} from 'swiper/modules';
 
 function App() {
     return (
