@@ -16,28 +16,7 @@
         background-color: #FFFFFF8F;
         z-index: 1;
     }
-    .App_backgroundRedSphere{
-        position: absolute;
-        top: 20rem;
-        left: -40rem;
-        width: 70rem;
-        border-radius: 100%;
-        height: 90rem;
-        filter: blur(12rem);
-        background-color: #F41D1D8C;
-        z-index: 1;
-    }
-    .App_backgroundBLueSphere{
-        position: absolute;
-        top: 40rem;
-        right: -40rem;
-        width: 80rem;
-        border-radius: 100%;
-        height: 80rem;
-        filter: blur(12rem);
-        background-color: #1964DD8C;
-        z-index: 1;
-    }
+
     .App_content{
         display: flex;
         flex-direction: column;
@@ -85,8 +64,31 @@
         margin: 0 auto;
         text-align: center;
         z-index: 3;
+        position: relative;
         @media (max-width: 600px) {
             width: 90%;
+        }
+        .App_backgroundRedSphere{
+            position: absolute;
+            top: 0;
+            left: -40rem;
+            width: 70rem;
+            border-radius: 100%;
+            height: 90rem;
+            filter: blur(12rem);
+            background-color: #F41D1D8C;
+            z-index: 1;
+        }
+        .App_backgroundBLueSphere{
+            position: absolute;
+            top: 20rem;
+            right: -40rem;
+            width: 80rem;
+            border-radius: 100%;
+            height: 80rem;
+            filter: blur(12rem);
+            background-color: #1964DD8C;
+            z-index: 1;
         }
         h1 {
             font-size: 3em;
@@ -94,6 +96,8 @@
             font-weight: 400;
             line-height: 50px;
             letter-spacing: 0%;
+            z-index: 3;
+            position: relative;
             @media (max-width: 1000px) {
                 font-size: 2.5rem;
             }
@@ -107,6 +111,8 @@
             line-height: 50px;
             letter-spacing: -5%;
             font-family: Helvetica;
+            z-index: 3;
+            position: relative;
             @media (max-width: 1000px) {
                 line-height: 35px;
             }
@@ -118,6 +124,7 @@
         width: 100%;
         text-align: left;
         position: relative;
+        z-index: 3;
         @media (max-width: 600px) {
             padding-left: 1rem;
         }

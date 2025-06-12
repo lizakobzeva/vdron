@@ -21,8 +21,6 @@ function App() {
     return (
         <div className="App">
             {/*<div className="backgroundWhiteSphere"></div>*/}
-            <div className="App_backgroundRedSphere"></div>
-            <div className="App_backgroundBLueSphere"></div>
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo"/>
                 <nav className='App-header_nav'>
@@ -34,6 +32,8 @@ function App() {
             <Dron/>
             <div className='App_content'>
                 <main className="main">
+                    <div className="App_backgroundRedSphere"></div>
+                    <div className="App_backgroundBLueSphere"></div>
                     <h1>Кто мы?</h1>
                     <p>мы - российская технологическая команда, разрабатывающая
                         универсальные платформы беспилотных летательных аппаратов
@@ -61,9 +61,9 @@ function App() {
                     <img className='mission_img' src={sirius} alt="Сириус"/>
                 </section>
                 <section className="aboutus">
-                    <h2>мы не просто производим дроны</h2>
-                    <p> мы даем возможность малым и крупным предприятиям внедрять БПЛА в ежедневную практику без
-                        зависимости от зарубежных поставщиков и без необходимости глубокой технической подготовки.</p>
+                    <h2>мы не просто разрабатываем дроны</h2>
+                    <p>мы создаём модульную платформу из отечественных комплектующих,
+                        что объединит невысокую стоимость продукта с полной независимостью от импорта</p>
                     <div className="aboutus_content">
                         <div className="aboutus_content-item">
                             <img src={square} alt="куб"/>
