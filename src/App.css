@@ -5,7 +5,7 @@
 .App {
     display: flex;
     flex-direction: column;
-    .App_backgroundWhiteSphere{
+    .backgroundWhiteSphere{
         position: absolute;
         top: 5rem;
         width: 40rem;
@@ -14,7 +14,7 @@
         left: calc(50% - 20rem);
         filter: blur(12rem);
         background-color: #FFFFFF8F;
-        z-index: 1;
+        z-index: 0;
     }
 
     .App_content{
@@ -453,3 +453,14 @@
 
 }
 
+.modelConfigurator{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 50vh;
+    z-index: 10;
+    right: 5vw;
+    top: 20vh;
+    gap: 1rem;
+}

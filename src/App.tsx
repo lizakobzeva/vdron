@@ -14,14 +14,14 @@ import braintools from './assets/braintools.png'
 import marker from './assets/marker.png'
 import dronImg from './assets/dronImg.png'
 // import {Swiper, SwiperSlide} from 'swiper/react';
-import Dron from "./Dron.tsx";
+import Scene3D from "./Scene3D.tsx";
 
 // import {EffectCoverflow, Pagination} from 'swiper/modules';
 
 function App() {
     return (
         <div className="App">
-            {/*<div className="backgroundWhiteSphere"></div>*/}
+            <div className="backgroundWhiteSphere"></div>
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo"/>
                 <nav className='App-header_nav'>
@@ -30,7 +30,7 @@ function App() {
                     <a href="/">каталог</a>
                 </nav>
             </header>
-            <Dron/>
+            <Scene3D/>
             <div className='App_content'>
                 <main className="main">
                     <div className="App_backgroundRedSphere"></div>
