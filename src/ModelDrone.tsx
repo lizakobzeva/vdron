@@ -178,7 +178,7 @@ interface Props {
 }
 
 export function ModelDrone({wingtype, cameratype}: Props) {
-    const {nodes, materials} = useGLTF('/drone.glb') as unknown as GLTFResult
+    const {nodes, materials} = useGLTF('/scene-transformed.glb') as unknown as GLTFResult
     return (
         <group dispose={null}>
             <mesh geometry={nodes.small_part_plate_190.geometry} material={materials.Material_0}/>
@@ -283,4 +283,4 @@ export function ModelDrone({wingtype, cameratype}: Props) {
     )
 }
 
-useGLTF.preload('/drone.glb')
+useGLTF.preload('/scene-transformed.glb')
