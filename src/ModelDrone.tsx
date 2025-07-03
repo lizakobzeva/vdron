@@ -283,4 +283,4 @@ export function ModelDrone({wingtype, cameratype}: Props) {
     )
 }
 
-useGLTF.preload('/scene-transformed.glb')
+useGLTF.preload('/drone.glb')

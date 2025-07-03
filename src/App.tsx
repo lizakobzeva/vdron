@@ -56,7 +56,7 @@ function App() {
                         </div>
                         <div className='mission_content-item'>
                             <img src={marker} alt="Резиденты ФТ Сириус"/>
-                            <p>Резиденты ФТ Сириус</p>
+                            <p>Резиденты ИНТЦ Сириус</p>
                         </div>
                     </div>
                     <img className='mission_img' src={sirius} alt="Сириус"/>
