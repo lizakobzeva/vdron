@@ -7,7 +7,7 @@ const styles = {
         whiteSpace: 'pre-wrap',
     },
     srOnly: {
-        position: 'absolute',
+        position: 'absolute' as const,
         width: '1px',
         height: '1px',
         padding: 0,
@@ -217,7 +217,7 @@ export default function DecryptedText({
 
     return (
         <motion.span className={parentClassName} ref={containerRef} style={styles.wrapper} {...hoverProps} {...props}>
-            <span>{displayText}</span>
+            <span style={styles.srOnly}>{displayText}</span>
 
             <span aria-hidden="true">
                 {displayText.split('').map((char, index) => {
